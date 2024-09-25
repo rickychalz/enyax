@@ -1,0 +1,16 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "module": "commonjs",       // Ensure this is set for Node.js support
+    "esModuleInterop": true,    // Allows default imports of CommonJS modules
+    "resolveJsonModule": true,  // Optional: allows importing JSON files
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
