@@ -86,7 +86,7 @@ export default function Contact() {
             Lets make your dream project a reality!
           </CardHeader>
           <span className="mb-3">Drop me a message and lets discuss.</span>
-          <a href="https://wa.me/255784508094?text=Hi%20Erick">
+          <a href="https://wa.me/255784508094?text=Hi%20Erick" target="_blank" rel="noopener noreferrer">
             {" "}
             <Button className="w-48 bg-green-500">Chat on Whatsapp</Button>
           </a>
