@@ -9,7 +9,7 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "@/components/ui/input";
@@ -40,8 +40,8 @@ export default function Contact() {
     },
   });
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const onSubmit = async (data: z.infer<typeof FormSchema>) => {
+ 
+  const onSubmit = async () => {
     if (
       !formRef.current ||
       !EMAILJS_SERVICE_ID ||

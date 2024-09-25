@@ -47,11 +47,41 @@ export const projectData = [
     technology: ["NextJS", "ReactJS", "Lighthouse"],
   },
   {
+    title: "LUICO Website",
+    description:
+      "Lutheran Investment Company acts as the economic powerhouse within the church, with a primary objective of wealth generation. The wealth we create is meticulously directed to support a range of vital social inclusion programs championed by the ELCT",
+    project_link: "https://luico.co.tz/",
+    github_link: "",
+    thumbnail: "../../src/assets/LUICO_LOGO-2.webp",
+    logo: "",
+    technology: ["Wordpress"],
+  },
+  {
+    title: "ABIL Website",
+    description:
+      "Amplepack (ABIL) works with any client that need technical support to uplift and manage best electronic (Digital) solutions and provide a comprehensive ICT business process, consultant of the entire business or specific unit in your organization and business processes. ",
+    project_link: "https://amplepack.co.tz//",
+    github_link: "",
+    thumbnail: "../../src/assets/abil.png",
+    logo: "",
+    technology: ["Wordpress"],
+  },
+  {
+    title: "Mapepa.com",
+    description:
+      "Mapepa.com is a platform that will allow students to get access to past papers from various schools and institutions to help with their self study and preparation for exams.",
+    project_link: "",
+    github_link: "https://github.com/rickychalz/mapepa.git",
+    thumbnail: "../../src/assets/mapepa.png",
+    logo: "",
+    technology: ["NextJS", "ReactJS", "MySQL"],
+  },
+  {
     title: "Portfolio Website",
     description:
-      "My portfolio website built with ReactJS",
+      "My portfolio website built with ReactJS to tell abit about me and show off some work that I have done and my personal projects...",
     project_link: "https://msosidrop.co.tz/",
-    github_link: "",
+    github_link: "https://github.com/rickychalz/enyax.git",
     thumbnail: "../../src/assets/e.png",
     logo: "",
     technology: ["ReactJS"],
