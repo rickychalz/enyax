@@ -80,7 +80,7 @@ export const projectData = [
     title: "Portfolio Website",
     description:
       "My portfolio website built with ReactJS to tell abit about me and show off some work that I have done and my personal projects...",
-    project_link: "https://msosidrop.co.tz/",
+    project_link: "https://ecnyakiha.vercel.app/",
     github_link: "https://github.com/rickychalz/enyax.git",
     thumbnail: "/assets/e.png",
     logo: "",
