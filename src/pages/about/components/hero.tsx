@@ -2,6 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
+  const onButtonClick = () => {
+    const pdfUrl = "Erick_Nyakiha_CV.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Erick_Nyakiha_CV.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
   return (
     <div className="my-6 flex flex-col">
       <p className="text-4xl md:text-6xl font-semibold">Hi, I'm Erick 👋🏽</p>
@@ -15,7 +24,7 @@ export default function Hero() {
         mobile applications.
       </p>
       <div className="flex gap-4 mt-4">
-        <Button>My Resume</Button>
+        <Button onClick={onButtonClick} >My Resume</Button>
        <Link to="/contact"> <Button variant={"outline"}>Contact Me</Button></Link>
       </div>
     </div>
