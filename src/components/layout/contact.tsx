@@ -40,7 +40,6 @@ export default function Contact() {
     },
   });
 
- 
   const onSubmit = async () => {
     if (
       !formRef.current ||
@@ -86,42 +85,46 @@ export default function Contact() {
             Lets make your dream project a reality!
           </CardHeader>
           <span className="mb-3">Drop me a message and lets discuss.</span>
-          <a href="https://wa.me/255784508094?text=Hi%20Erick" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://wa.me/255784508094?text=Hi%20Erick"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {" "}
             <Button className="w-48 bg-green-500">Chat on Whatsapp</Button>
           </a>
           <Separator className="w-full my-8"></Separator>
           <div className="flex flex-col items-center w-full">
-          <span className="mb-4 font-light text-center">
-            You can also drop your email and I'll get back to you.
-          </span>
-          <Form {...form}>
-            <form
-              ref={formRef}
-              onSubmit={form.handleSubmit(onSubmit)}
-              className="flex w-full gap-2 max-w-sm items-center"
-            >
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormControl>
-                      <Input
-                        placeholder="example@email.com"
-                        {...field}
-                        className="w-full shadow-none h-10 border-none bg-white"
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button type="submit" className="h-10 w-24 bg-blue-500 ">
-                Send
-              </Button>
-            </form>
-          </Form>
+            <span className="mb-4 font-light text-center">
+              You can also drop your email and I'll get back to you.
+            </span>
+            <Form {...form}>
+              <form
+                ref={formRef}
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="flex w-full gap-2 max-w-sm items-center"
+              >
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <Input
+                          placeholder="example@email.com"
+                          {...field}
+                          className="w-full shadow-none h-10 border-none bg-white"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <Button type="submit" className="h-10 w-24 bg-blue-500 ">
+                  Send
+                </Button>
+              </form>
+            </Form>
           </div>
         </div>
       </Card>
