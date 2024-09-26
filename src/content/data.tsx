@@ -86,6 +86,16 @@ export const projectData = [
     logo: "",
     technology: ["ReactJS", "EmailJS"],
   },
+  {
+    title: "Mauzo",
+    description:
+      "Sales Management System that is used to keep track of sales and purchases of a business.",
+    project_link: "",
+    github_link: "https://github.com/rickychalz/Mauzo.git",
+    thumbnail: "/assets/logo-sm.svg",
+    logo: "",
+    technology: ["php", "MySQL"],
+  },
 ];
 
 export const currentProjectData = [
