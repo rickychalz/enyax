@@ -10,8 +10,8 @@ const About: React.FC = () => {
       <div className="flex flex-col">
         <Hero />
         <WorkExperience />
-        <Projects />
         <CurrentProjects />
+        <Projects />
         <Contact />
       </div>
     </>
