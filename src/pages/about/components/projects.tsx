@@ -4,6 +4,7 @@ import { Card, CardDescription, CardHeader } from "@/components/ui/card";
 import { projectData } from "@/content/data";
 import { IconBrandGithub, IconWorld } from "@tabler/icons-react";
 import { useTheme } from '@/context/theme-context';
+import { Link } from 'react-router-dom';
 
 
 interface Project {
@@ -100,6 +101,7 @@ const Project: React.FC = () => {
     <div className="mt-6 mb-12 flex flex-col">
       <div className="flex justify-between items-center">
         <div className="font-semibold text-xl mb-3">Projects</div>
+        <div className='text-sm text-gray-500'><Link to="/projects">See all</Link></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {projectData.slice(0,2).map((project: Project, index: number) => (
