@@ -84,7 +84,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="mb-12">
+    <div className="mb-12 max-w-xl w-full">
       <Form {...form}>
         <form ref={formRef} onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <FormField
@@ -133,7 +133,7 @@ export const ContactForm = () => {
               <FormItem>
                 <FormLabel>Message</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="Type your message here." {...field} className="shadow-none" />
+                  <Textarea placeholder="Type your message here." {...field} className="shadow-none"  />
                 </FormControl>
                 <FormMessage />
               </FormItem>

@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="flex gap-1 items-center"><a href="https://twitter.com/codeBase99"><span>Twitter</span></a></div>
       </div>
       <div>
-      <p className="text-sm text-neutral-400">&copy; {currentYear} ecnyakiha All rights reserved.</p>
+      <p className="text-sm text-neutral-400">&copy; {currentYear} All rights reserved.</p>
       </div>
     </div>
   )

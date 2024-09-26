@@ -79,7 +79,7 @@ export default function Contact() {
 
   return (
     <div className="mt-6 mb-12 flex flex-col">
-      <Card className="mt-4 shadow-none p-6 flex justify-between border-slate-200 bg-slate-100">
+      <Card className="mt-4 shadow-none p-6 flex justify-between border-slate-200 bg-slate-100 dark:bg-neutral-900 dark:border-neutral-800">
         <div className="flex flex-col w-full items-center">
           <CardHeader className="p-0 font-bold text-lg text-center mb-1">
             Lets make your dream project a reality!
@@ -102,7 +102,7 @@ export default function Contact() {
               <form
                 ref={formRef}
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="flex w-full gap-2 max-w-sm items-center"
+                className="flex w-full gap-2 justify-center items-center"
               >
                 <FormField
                   control={form.control}
@@ -113,14 +113,14 @@ export default function Contact() {
                         <Input
                           placeholder="example@email.com"
                           {...field}
-                          className="w-full shadow-none h-10 border-none bg-white"
+                          className="w-full shadow-none h-10 border-none bg-white dark:bg-neutral-800"
                         />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="h-10 w-24 bg-blue-500 ">
+                <Button type="submit" className="h-10 w-24 bg-blue-500 dark:text-white">
                   Send
                 </Button>
               </form>
