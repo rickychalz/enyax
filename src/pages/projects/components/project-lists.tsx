@@ -44,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         className="absolute inset-0 transition-opacity duration-300 pointer-events-none"
         style={{
           opacity: isHovering ? 1 : 0,
-          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(59, 130, 246, 0.06), transparent 50%)`,
+          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(59, 130, 246, 0.08), transparent 50%)`,
         }}
       />
       <div className="flex flex-col p-4 relative z-10">
