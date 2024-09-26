@@ -84,7 +84,7 @@ export const projectData = [
     github_link: "https://github.com/rickychalz/enyax.git",
     thumbnail: "/assets/e.png",
     logo: "",
-    technology: ["ReactJS"],
+    technology: ["ReactJS", "EmailJS"],
   },
 ];
 
