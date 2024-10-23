@@ -27,6 +27,17 @@ export const workExperienceData = [
 
 export const projectData = [
   {
+    title: "Tumwabudu Mungu Wetu - App",
+    description:
+      "Tumwabudu Mungu Wetu App is the app containing all the contents of the Tumwabudu Mungu Wetu Hard Book and more.",
+    project_link: "https://onelink.to/757r74",
+    github_link: "",
+    thumbnail: "/assets/tmw.png",
+    thumbnail_dark: "/assets/tmw.png",
+    logo: "",
+    technology: ["Flutter", "NodeJS", "ExpressJS", "MongoDB"],
+  },
+  {
     title: "Tenzi Za Rohoni - App",
     description:
       "Redeveloped the Tenzi za Rohoni app using flutter. Tenzi za rohoni is an app containing christian hymns from the physical book to help christians access them collection from anywhere.",
@@ -103,18 +114,9 @@ export const projectData = [
     logo: "",
     technology: ["php", "MySQL"],
   },
+  
 ];
 
 export const currentProjectData = [
-    {
-      title: "Tumwabudu Mungu Wetu - App",
-      description:
-        "Tumwabudu Mungu Wetu App is the app containing all the contents of the Tumwabudu Mungu Wetu Hard Book and more.",
-      project_link: "",
-      github_link: "",
-      thumbnail: "/assets/tmw.png",
-      thumbnail_dark: "/assets/tmw.png",
-      logo: "",
-      technology: ["Flutter", "NodeJS", "ExpressJS", "MongoDB"],
-    },
+   
   ];

@@ -1,10 +1,9 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardDescription, CardHeader } from "@/components/ui/card";
 import { currentProjectData } from "@/content/data";
 import { IconBrandGithub, IconWorld } from "@tabler/icons-react";
-import { useTheme } from '@/context/theme-context';
-
+import { useTheme } from "@/context/theme-context";
 
 interface Project {
   thumbnail: string;
@@ -23,7 +22,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
-  const { theme } = useTheme(); // Use the theme
+  const { theme } = useTheme();
 
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -49,10 +48,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       />
       <div className="flex flex-col p-4 relative z-10">
         <div className="flex items-start justify-between">
-          
           <img
             alt="thumbnail"
-            src={theme === 'dark' ? project.thumbnail_dark :project.thumbnail}
+            src={theme === "dark" ? project.thumbnail_dark : project.thumbnail}
             width={48}
             className="mb-4 h-12 w-full object-contain object-left"
           />
@@ -85,7 +83,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </CardDescription>
         <div className="flex gap-2 flex-wrap mt-2">
           {project.technology.map((tech: string, techIndex: number) => (
-            <Badge variant="outline" key={techIndex} className='dark:bg-neutral-900'>
+            <Badge
+              variant="outline"
+              key={techIndex}
+              className="dark:bg-neutral-900"
+            >
               {tech}
             </Badge>
           ))}
@@ -96,10 +98,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 };
 
 const ProjectList: React.FC = () => {
+  // Only render if there's data in currentProjectData
+  if (!currentProjectData || currentProjectData.length === 0) {
+    return null;
+  }
+
   return (
     <div className="mt-6 mb-12 flex flex-col">
       <div className="flex justify-between items-center">
-        <div className="font-semibold text-xl mb-3">Currently working on</div>
+        <div className="font-semibold text-xl mb-3">
+          Currently working on
+        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {currentProjectData.map((project: Project, index: number) => (

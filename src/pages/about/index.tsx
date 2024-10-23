@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import Projects from "./components/projects";
 import WorkExperience from "./components/work-experience";
 
+
 const About: React.FC = () => {
   return (
     <>
