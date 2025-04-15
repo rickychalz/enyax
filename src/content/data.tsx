@@ -8,7 +8,7 @@ export const workExperienceData = [
   {
     logo: "",
     company: "Lutheran Investment Company Ltd - LUICO",
-    role: "Software Developer - Freelance Contract",
+    role: "Software Developer - Freelance",
     duration: "May 2024 - Present",
   },
   {
