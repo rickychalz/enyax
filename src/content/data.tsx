@@ -1,8 +1,14 @@
 export const workExperienceData = [
   {
     logo: "",
+    company: "IPFSoftwares",
+    role: "Frontend Developer",
+    duration: "December 2024 - Present",
+  },
+  {
+    logo: "",
     company: "Lutheran Investment Company Ltd - LUICO",
-    role: "Software Developer",
+    role: "Software Developer - Freelance Contract",
     duration: "May 2024 - Present",
   },
   {
