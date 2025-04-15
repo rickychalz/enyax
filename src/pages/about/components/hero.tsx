@@ -24,7 +24,7 @@ export default function Hero() {
         mobile applications.
       </p>
       <div className="flex gap-4 mt-4">
-        <a href="https://drive.google.com/file/d/185shglhaSkVMH9LFW9vY02ga-sMZf4LF/view?usp=sharing"><Button >My Resume</Button></a>
+        <a href="https://drive.google.com/file/d/1nbo81M2PP1PpWeqXolyZNGe7P-JgkZ3i/view?usp=drive_link"><Button >My Resume</Button></a>
        <Link to="/contact"> <Button variant={"outline"}>Contact Me</Button></Link>
       </div>
     </div>
